@@ -1,3 +1,2 @@
 FROM httpd
-COPY . /usr/share/nginx/html
-CMD [systemctl start httpd]
+COPY . /usr/local/apache2/htdocs
