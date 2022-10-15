@@ -9,8 +9,8 @@ pipeline {
         stage("image build") {
             steps {
                 sh '''
-                sudo docker build -t image:$BUILD_NUMBER .
-                sudo docker push 301712948359.dkr.ecr.ap-southeast-1.amazonaws.com/dockerimage:$BUILD_NUMBER
+                sudo docker build -t 301712948359.dkr.ecr.ap-southeast-1.amazonaws.com/dockerimage:latest
+                sudo docker push 301712948359.dkr.ecr.ap-southeast-1.amazonaws.com/dockerimage:latest
                 '''
             }
         }
