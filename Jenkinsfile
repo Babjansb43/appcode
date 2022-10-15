@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage("checkout") {
             steps{
-                sh 'checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'git@github.com:Babjansb43/appcode.git']]])'
+                sh 'checkout([$class: 'GitSCM', branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[url: 'git@github.com:Babjansb43/appcode.git']]])']]])'
             }
         }
         stage("image build") {
