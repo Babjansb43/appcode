@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh '''
                 sudo docker image -t image:$BUILD_NUMBER .
-                sudo docker push 301712948359.dkr.ecr.ap-southeast-1.amazonaws.com/dockerimage:$BUILD_NUMBER
+                sudo docker push 301712948359.dkr.ecr.ap-southeast-1.amazonaws.com/image:$BUILD_NUMBER
                 '''
             }
         }
